@@ -75,4 +75,4 @@ This project is licensed under the terms specified in the [LICENSE](LICENSE) fil
 
 Displays a festive terminal animation with a Christmas tree, ornaments, falling snow, and a scrolling greeting.
 
-![Loading animation](img/01-Show-FestiveAnimation2025.gif)
+![Loading animation](img/Project1-Show-FestiveAnimation2025.gif)
