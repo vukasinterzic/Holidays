@@ -4,7 +4,7 @@
 
 ### *Spreading Joy and Festive Cheer Throughout the Year!* ✨
 
-![Christmas](https://img.shields.io/badge/Season-Christmas%20🎅-red?style=for-the-badge&logo=christmas&logoColor=white)
+![Christmas](https://img.shields.io/badge/Season-Christmas%20🎅-red?style=for-the-badge)
 ![Holiday](https://img.shields.io/badge/Spirit-Festive%20✨-green?style=for-the-badge)
 ![Joy](https://img.shields.io/badge/Mood-Joyful%20🎁-gold?style=for-the-badge)
 
