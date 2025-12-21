@@ -63,8 +63,16 @@ This project is licensed under the terms specified in the [LICENSE](LICENSE) fil
 
 <div align="center">
 
-### � Celebrate Every Occasion! 🎊
+### 🎊 Celebrate Every Occasion! 🎊
 
 *May your code bring joy throughout the year!* ✨
 
 </div>
+
+---
+
+### Project 1: Christmass Tree 2025
+
+Displays a festive terminal animation with a Christmas tree, ornaments, falling snow, and a scrolling greeting.
+
+![Loading animation](img/01-Show-FestiveAnimation2025.gif)
