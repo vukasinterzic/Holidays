@@ -5,7 +5,7 @@
     Displays a colorful countdown to the New Year followed by an animated fireworks display
 .NOTES
     Author: Vukasin Terzic
-    Date: December 2025
+    Date: January 2026
 #>
 
 # Clear the screen
@@ -25,8 +25,8 @@ trap {
     exit
 }
 
-# Get New Year 2025
-$newYear = Get-Date -Year 2025 -Month 1 -Day 1 -Hour 0 -Minute 0 -Second 0
+# Get New Year 2026
+$newYear = Get-Date -Year 2026 -Month 1 -Day 1 -Hour 0 -Minute 0 -Second 0
 
 # Function to draw colorful banner
 function Show-Banner {
@@ -135,7 +135,7 @@ function Show-Fireworks {
     
     Clear-Host
     
-    # Happy New Year 2025 message
+    # Happy New Year 2026 message
     Write-Host ""
     Write-Host ""
     Write-Host "  ██╗  ██╗ █████╗ ██████╗ ██████╗ ██╗   ██╗    ███╗   ██╗███████╗██╗    ██╗" -ForegroundColor Yellow
@@ -148,7 +148,7 @@ function Show-Fireworks {
     Write-Host "     ██╗   ██╗███████╗ █████╗ ██████╗     ██████╗  ██████╗ ██████╗ ███████╗ " -ForegroundColor Cyan
     Write-Host "     ╚██╗ ██╔╝██╔════╝██╔══██╗██╔══██╗    ╚════██╗██╔═████╗╚════██╗██╔════╝ " -ForegroundColor Cyan
     Write-Host "      ╚████╔╝ █████╗  ███████║██████╔╝     █████╔╝██║██╔██║ █████╔╝███████╗ " -ForegroundColor Cyan
-    Write-Host "       ╚██╔╝  ██╔══╝  ██╔══██║██╔══██╗    ██╔═══╝ ████╔╝██║██╔═══╝ ╚════██║ " -ForegroundColor Cyan
+    Write-Host "       ╚██╔╝  ██╔══╝  ██╔══██║██╔══██╗    ██╔═══╝ ████╔╝██║██╔═══╝ ██╔══██║ " -ForegroundColor Cyan
     Write-Host "        ██║   ███████╗██║  ██║██║  ██║    ███████╗╚██████╔╝███████╗███████║ " -ForegroundColor Cyan
     Write-Host "        ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝    ╚══════╝ ╚═════╝ ╚══════╝╚══════╝ " -ForegroundColor Cyan
     Write-Host ""
