@@ -1,0 +1,31 @@
+# VSCode
+.vscode/
+*.code-workspace
+.history/
+*.swp
+*.swo
+*~
+
+# macOS / Apple
+.DS_Store
+.AppleDouble
+.LSOverride
+*.swp
+.env.local
+.env.*.local
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created by caches, installers, etc.
+$RECYCLE.BIN/
+ehthumbs.db

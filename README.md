@@ -75,4 +75,11 @@ This project is licensed under the terms specified in the [LICENSE](LICENSE) fil
 
 Displays a festive terminal animation with a Christmas tree, ornaments, falling snow, and a scrolling greeting.
 
-![Loading animation](img/Project1-Show-FestiveAnimation2025.gif)
+![Festive animation](img/Project1-Show-FestiveAnimation2025.gif)
+
+### Project 2: New Year Countdown with Fireworks 2025
+
+Features a colorful countdown to New Year 2025 with rotating colors, then displays Happy New Year 2025 in big ASCII text, followed by an infinite fireworks animation with sparkling effects.
+
+![New Year animation](img/Project2-NewYear2025.gif)
+
