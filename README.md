@@ -92,6 +92,6 @@ A multi-phase Valentine's Day terminal animation featuring Cupid's arrow flying 
 pwsh -File Show-ValentineAnimation2026.ps1
 
 # Or pass them directly
-pwsh -File Show-ValentineAnimation2026.ps1 -Name "Alice" -Message "I love you!"
+pwsh -File Show-ValentineAnimation2026.ps1 -Name "Alena" -Message "I love you!"
 ```
 
