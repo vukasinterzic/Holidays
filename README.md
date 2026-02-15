@@ -83,3 +83,15 @@ Features a colorful countdown to New Year 2026 with rotating colors, then displa
 
 ![New Year animation](img/Project2-NewYear2026Animation.gif)
 
+### Project 3: Valentine's Day Animation 2026
+
+A multi-phase Valentine's Day terminal animation featuring Cupid's arrow flying across the screen, a heart that assembles radially from the impact point, a personal name and message reveal with a heartbeat pulse effect, and a heart rain finale with a framed scrolling love banner.
+
+```powershell
+# Run the animation (you'll be prompted for a name and message)
+pwsh -File Show-ValentineAnimation2026.ps1
+
+# Or pass them directly
+pwsh -File Show-ValentineAnimation2026.ps1 -Name "Alice" -Message "I love you!"
+```
+
