@@ -19,7 +19,7 @@ A short love message. Defaults to "Happy Valentine's Day!"
 pwsh -File Show-SomeLove-Valentine2026.ps1
 
 .EXAMPLE
-pwsh -File Show-SomeLove-Valentine2026.ps1 -Name "Alice" -Message "I love you!"
+pwsh -File Show-SomeLove-Valentine2026.ps1 -Name "Alena" -Message "I love you!"
 
 .NOTES
 Best in a wide terminal (100+ columns, 30+ rows) with a Unicode-capable font.
@@ -45,7 +45,7 @@ $HeartRainSec  = 6        # seconds of falling hearts
 $AssemblyMs    = 5        # ms pause per batch during heart assembly
 $TypewriterMs  = 80       # ms per character in typewriter effect
 $PulseFrames   = 8        # heartbeat pulse cycles
-$BannerLoops   = 2        # how many times the banner scrolls
+$BannerLoops   = 3        # how many times the banner scrolls
 
 $SparkChars = @('*','+','·','✦','✧','✶','✷')
 $RainChars  = @('♥','♡','♥','♡','♥','♥','❥')
@@ -419,11 +419,10 @@ function Show-HeartRainBanner {
   $topBorder    = $vChar.ToString() + ([string]::new($hChar, $bannerW - 2)) + $vChar.ToString()
   $bottomBorder = $topBorder
 
-  # Scrolling text
-  $scrollText = "  $Name  ♥  $Message  ♥  "
-  $padStr     = ' ' * $innerW
-  $fullScroll = $padStr + $scrollText + $padStr
-  $scrollIdx  = 0
+  # Scrolling text – continuous marquee with short gap between repeats
+  $scrollText = "  $Name  ♥  $Message  ♥   "
+  # Total steps = enough to scroll BannerLoops full cycles of the text
+  $totalSteps = $scrollText.Length * $BannerLoops
 
   # Falling hearts state
   $rainColors = @([ConsoleColor]::Red,[ConsoleColor]::DarkRed,
@@ -439,11 +438,9 @@ function Show-HeartRainBanner {
     }
   }
 
-  $totalSec = $HeartRainSec + $BannerLoops * 3
-  $end = (Get-Date).AddSeconds($totalSec)
   $fc  = 0
 
-  while((Get-Date) -lt $end){
+  for($scrollIdx = 0; $scrollIdx -lt $totalSteps; $scrollIdx++){
     # ── Falling hearts ──
     foreach($d in $drops){
       $inBanner = ($d.Y -ge ($bannerY - 1) -and $d.Y -le ($bannerY + $bannerH) -and
@@ -487,11 +484,9 @@ function Show-HeartRainBanner {
     $textX = $bannerX + 2
     $visibleSlice = ''
     for($k = 0; $k -lt $innerW; $k++){
-      $visibleSlice += $fullScroll[($scrollIdx + $k) % $fullScroll.Length]
+      $visibleSlice += $scrollText[($scrollIdx + $k) % $scrollText.Length]
     }
     Put $textX $textY $visibleSlice ([ConsoleColor]::White)
-    $scrollIdx++
-    if($scrollIdx -ge $fullScroll.Length){ $scrollIdx = 0 }
 
     $fc++
     if($fc % 25 -eq 0){ Beep-Safe (Get-Random -Minimum 600 -Maximum 1000) 18 }
