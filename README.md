@@ -95,3 +95,4 @@ pwsh -File Show-ValentineAnimation2026.ps1
 pwsh -File Show-ValentineAnimation2026.ps1 -Name "Alena" -Message "I love you!"
 ```
 
+![Valenetine's Day Animation 2026](img/Project3-ValentineAnimation2026.gif)
