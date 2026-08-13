@@ -96,3 +96,17 @@ pwsh -File Show-ValentineAnimation2026.ps1 -Name "Alena" -Message "I love you!"
 ```
 
 ![Valenetine's Day Animation 2026](img/Project3-ValentineAnimation2026.gif)
+
+### Project 4: Happy Birthday Animation 2026
+
+A birthday terminal animation featuring rising balloons, a candle-lit cake, a big Happy Birthday banner, a personal name reveal, and a confetti finale.
+
+```powershell
+# Run the animation (you'll be prompted for a name, message, and age)
+pwsh -File Show-BirthdayAnimation2026.ps1
+
+# Or pass them directly
+pwsh -File Show-BirthdayAnimation2026.ps1 -Name "Vukasin" -Message "Wishing you a wonderful day!" -Age 30
+```
+
+![Happy Birthday Animation 2026](img/Project4-HappyBirthday2026.gif)
